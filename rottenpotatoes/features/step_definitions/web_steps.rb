@@ -86,6 +86,8 @@ When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
   select(value, :from => field)
 end
 
+#Given /^(?:|I )the following ratings:
+
 When /^(?:|I )check "([^"]*)"$/ do |field|
   check(field)
 end
