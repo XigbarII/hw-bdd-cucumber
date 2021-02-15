@@ -66,7 +66,7 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
       steps %Q{When I uncheck "ratings[#{rat}]"}
     end
   end
-  #fail "Unimplemented"
+  fail "Unimplemented"
 end
 
 Then /I should see all the movies/ do
