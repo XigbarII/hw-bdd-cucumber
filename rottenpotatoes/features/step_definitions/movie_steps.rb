@@ -18,7 +18,7 @@ Movie.delete_all
 #end
 #byebug
 Given /the following movies exist/ do |movies_table|
-  byebug
+  #byebug
   movies_table.hashes.each do |movie|
     # each returned element will be a hash whose key is the table header.
     # you should arrange to add that movie to the database here.
@@ -30,11 +30,11 @@ Given /the following movies exist/ do |movies_table|
       mov.save
     end
   end
-  fail "Unimplemented"
+  #fail "Unimplemented"
 end
 
 Then /(.*) seed movies should exist/ do | n_seeds |
-  byebug
+  #byebug
   Movie.count.should be n_seeds.to_i
 end
 
