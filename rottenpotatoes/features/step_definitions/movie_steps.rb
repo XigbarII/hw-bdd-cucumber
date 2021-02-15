@@ -70,6 +70,9 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
 end
 
 Then /I should see all the movies/ do
+  #byebug
+  rows = all("table#movies tr").count-1
+  expect(rows).to eq Movie.all.count
   # Make sure that all the movies in the app are visible in the table
-  fail "Unimplemented"
+  #fail "Unimplemented"
 end
